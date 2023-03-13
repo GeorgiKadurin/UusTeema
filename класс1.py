@@ -13,21 +13,20 @@
     x = "ru"   # tähestiku määratlus
     for f in nimi:
         if f.isalpha():
-            if f.lower() in tähestik:
+            if f.lower() in tähestik: 
                 x = "ru"
-            elif f.lower() in tähestik.values():
+            elif f.lower() in tähestik.values(): 
                 x = "eng"
-            break
+            break  
 
     
-    numder_nimi = 0  # nimenumbri arvutamine
+    numder_nimi = 0  
     for f in nimi:
-        if f.isalpha():
+        if f.isalpha(): 
             numder_nimi+=tähestik[f.lower()] 
          
-    if  numder_nimi > 9:
-        numbrid = [int(numbri) for numbri in str(numder_nimi)] #teisendab numder_nimi numbrite loendiks.
-        numder_nimi = sum(numbrid)
+    if  numder_nimi > 9: 
+        numbrid = [int(numbri) for numbri in str(numder_nimi)] #teisendab numder_nimi numbrite loendiks
 
     return numder_nimi
 
